@@ -1,25 +1,25 @@
-create database CaseStudy;
-use CaseStudy;
+create database case_study;
+use case_study;
 create table nhan_vien(
-`ma_nhan_vien` int primary key not null,
-`ho_va_ten` varchar(45) not null,
-`ngay_sinh` date not null,
-`so_cmnd` varchar(45)  not null,
-`luong` double not null,
-`so_dien_thoai` varchar(45) not null,
-`email` varchar(45) not null ,
-`dia_chi` varchar(45) not null,
-`ma_vi_tri` int not null , foreign key (`ma_vi_tri`) references vi_tri(`ma_vi_tri`),
-`ma_trinh_do` int not null , foreign key (`ma_trinh_do`) references trinh_do(`ma_trinh_do`),
-`ma_bo_phan` int  not null , foreign key (`ma_bo_phan`) references bo_phan(`ma_bo_phan`)
+ma_nhan_vien int primary key ,
+ho_ten varchar(45) ,
+ngay_sinh date ,
+so_cmnd varchar(45),
+luong double ,
+so_dien_thoai varchar(45) ,
+email varchar(45),
+dia_chi varchar(45),
+ma_vi_tri int , foreign key (ma_vi_tri) references vi_tri(ma_vi_tri),
+ma_trinh_do int, foreign key (ma_trinh_do) references trinh_do(ma_trinh_do),
+ma_bo_phan int , foreign key (ma_bo_phan) references bo_phan(ma_bo_phan)
 );
 create table vi_tri(
-`ma_trinh_do` int auto_increment primary key,
-`ten_vi_tri` varchar(45) 
+ma_vi_tri int auto_increment primary key,
+ten_vi_tri varchar(45) 
 );
 create table trinh_do(
-`ma_trinh_do` int primary key not null,
-`ten_trinh_do` varchar(45)
+ma_trinh_do int primary key not null,
+ten_trinh_do varchar(45)
 );
 create table bo_phan(
 ma_bo_phan int primary key not null,
@@ -71,19 +71,21 @@ ma_kieu_thue int primary key not null,
 ten_kieu_thue varchar(45)
 );
 create table dich_vu(
-ma_dich_vu int primary key not null,
+ma_dich_vu int primary key auto_increment,
 ten_dich_vu varchar(45) not null,
-dien_tich int not null,
-chi_phi_thue double not null,
-so_nguoi_toi_da int not null,
-ma_kieu_thue int not null,foreign key (ma_kieu_thue) references kieu_thue(ma_kieu_thue),
-ma_loai_dich_vu int not null,foreign key(ma_loai_dich_vu) references loai_dich_vu(ma_loai_dich_vu),
-tieu_chuan_phong varchar(45) not null,
-mo_ta_tien_nghi_khac varchar(45) not null,
-dien_tich_ho_boi double not null,
-so_tang int not null
+dien_tich int,
+chi_phi_thue double,
+so_nguoi_toi_da int,
+tieu_chuan_phong varchar(45),
+mo_ta_tien_nghi_khac varchar(45),
+dien_tich_ho_boi double,
+so_tang int,
+ma_kieu_thue int,
+foreign key(ma_kieu_thue) references kieu_thue(ma_kieu_thue),
+ma_loai_dich_vu int,
+foreign key(ma_loai_dich_vu) references loai_dich_vu(ma_loai_dich_vu)
 );
-insert into nhan_vien(ma_nhan_vien,ho_va_ten,ngay_sinh,so_cmnd,luong,so_dien_thoai,email,dia_chi,ma_vi_tri,ma_trinh_do,ma_bo_phan)
+insert into nhan_vien(ma_nhan_vien,ho_ten,ngay_sinh,so_cmnd,luong,so_dien_thoai,email,dia_chi,ma_vi_tri,ma_trinh_do,ma_bo_phan)
 value(1,"Nguyễn Văn An",19701107,456231786,10000000,0901234121,"annguyen@gmail.com","295 Nguyễn Tất Thành,Đà Nẵng",1,3,1),
 (2,"Lê Văn Bình",19970409,654231234,7000000,0934212314,"binhlv@gmail.com","22 Yên Bái,Đà Nẵng",1,2,2),
 (3,"Hồ Thị Yến",19951212,999231723,14000000,0412352315,"thiyen@gmail.com","K234/11 Điện Biên Phủ,Gia Lai",1,3,2),
@@ -133,13 +135,13 @@ insert into loai_dich_vu(ma_loai_dich_vu,ten_loai_dich_vu)
 value(1,"Villa"),
 (2,"House"),
 (3,"Room");
-insert into dich_vu(mo_ta_tien_nghi_khac,dien_tich_ho_boi,so_tang,ma_kieu_thue,ma_loai_dich_vu)
-value("Có hồ bơi",500,4,3,1),
-("Có thêm bếp nướng",null,3,2,2),
-("Có tivi",null,null,4,3),
-("Có hồ bơi",300,3,3,1),
-("Có thêm bếp nướng",null,2,3,2),
-("Có tivi",null,null,4,3);
+insert into dich_vu(ma_dich_vu,ten_dich_vu, dien_tich, chi_phi_thue, so_nguoi_toi_da, tieu_chuan_phong, mo_ta_tien_nghi_khac, dien_tich_ho_boi, so_tang, ma_kieu_thue, ma_loai_dich_vu)
+value ("Villa Beach Front",	25000, 10000000, 10, "vip",	"Có hồ bơi", 500, 4, 3,	1),
+("House Princess 01", 14000, 5000000, 7, "vip",	"Có thêm bếp nướng", null, 3, 2, 2),
+("Room Twin01",	5000, 1000000, 2, "normal", "Có tivi", null, null, 4, 3),
+("Villa No Beach Front", 22000, 9000000, 8, "normal", "Có hồ bơi", 300,	3, 3, 1),
+("House Princess 02", 10000, 4000000, 5, "normal", "Có thêm bếp nướng",	null, 2, 3, 2),
+("Room Twin 02", 3000, 900000, 2, "normal", "Có tivi", null, null, 4, 3);
 insert into dich_vu_di_kem(ma_dich_vu_di_kem,ten_dich_vu_di_kem,gia,don_vi,trang_thai)
 value(1,"Karaoke",10000,"giờ","tiện nghi,hiện tại"),
 (2,"Thuê xe máy",10000,"chiếc","hỏng 1 xe"),
@@ -169,12 +171,3 @@ value(1,5,2,4),
 (6,1,1,3),
 (7,2,1,2),
 (8,2,12,2);
-
-
-
-
-
-
-	
-
-
