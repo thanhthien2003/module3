@@ -83,3 +83,4 @@ mo_ta_tien_nghi_khac varchar(45) not null,
 dien_tich_ho_boi double not null,
 so_tang int not null
 );
+select * from dich_vu;
