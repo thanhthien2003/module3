@@ -53,5 +53,10 @@ join `order` on customer.c_ID  = `order`.c_ID
 join order_detail on order_detail.o_ID=`order`.o_ID
 join product on product.p_ID=order_detail.p_ID; 
  select customer.c_name
- from customer left join `order` on `order`.c_ID = customer.c_ID where `order`.c_id is null;
+ from customer left join `order` on customer.c_ID=`order`.c_ID  where `order`.c_id is null;
+ select `order`.o_ID,`order`.o_date,sum(order_detail.od_QTY*product.p_price) as o_total_price
+ from   `order` join order_detail on `order`.o_ID=order_detail.o_ID
+ join product on order_detail.p_ID=product.p_ID
+ group by `order`.o_ID;
+ 
 	
