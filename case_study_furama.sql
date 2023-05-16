@@ -171,3 +171,5 @@ value(1,5,2,4),
 (6,1,1,3),
 (7,2,1,2),
 (8,2,12,2);
+select * from nhan_vien nv
+where (substring(nv.ho_ten," ",-1) like "H%") or (substring(nv.ho_ten," ",-1)like "T%") or (substring(nv.ho_ten," ",-1)like "K%") and (char_length(ho_ten))<=15;
