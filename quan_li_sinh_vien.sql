@@ -58,5 +58,31 @@ from mark
 join student on mark.student_id=student.student_id
 join `subject` on mark.sub_id=`subject`.sub_id
 order by mark.mark desc,student_name asc;
+select address,count(student_id) from student group by address;
+select student.student_id,student.student_name,avg(mark)
+from student join mark on student.student_id=mark.student_id
+group by student.student_id,student.student_name;
+ select student.student_id,student.student_name,avg(mark)
+ from student join mark on student.student_id = mark.student_id
+ group by student.student_id,student.student_name
+ having avg(mark)>15;
+select student.student_id,student.student_name,avg(mark)
+from student join mark on student.student_id=mark.student_id
+group by student.student_id,student.student_name
+having avg(mark) >= all (select avg(mark) from mark  group by mark.student_id);
+-- hien thi tat ca thong tin mon hoc (bang subject) co credit  lon nhat.
+select max(credit) from `subject` having max(credit); 
+-- hien thi thong tin mon hoc co diem thi lon nhat.
+select `subject`.sub_name,max(mark) 
+from `subject` join mark on `subject`.sub_id=mark.sub_id group by `subject`.sub_id;
+-- hien thi cac thong tin sinh vien va diem trung binh cua moi sinh vien,xep hang theo thu tu diem giam dan.
 
- 
+select s.student_id,s.student_name,avg(mark) from student s
+left join mark m on s.student_id=m.student_id
+group by s.student_id 
+order by avg(mark) desc;
+
+SET GLOBAL sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));
+SHOW VARIABLES LIKE 'sql_mode';
+set global sql_mode='STRICT_TRANS_TABLES';
+set sql_mode="only_full_group_by";
