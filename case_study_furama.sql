@@ -172,4 +172,23 @@ value(1,5,2,4),
 (7,2,1,2),
 (8,2,12,2);
 select * from nhan_vien nv
-where (substring(nv.ho_ten," ",-1) like "H%") or (substring(nv.ho_ten," ",-1)like "T%") or (substring(nv.ho_ten," ",-1)like "K%") and (char_length(ho_ten))<=15;
+where nv.ho_ten like 'H%' or nv.ho_ten like 'T%' or (nv.ho_ten like 'K%') and (char_length(ho_ten))<=15;
+
+select * from khach_hang kh
+where (datediff(now(),kh.ngay_sinh))/365  between 18 and 50 
+and kh.dia_chi like "%Đà Nẵng" or  kh.dia_chi like "%Quảng Trị%" ;
+
+select kh.ma_khach_hang,kh.ho_ten ,count(hd.ma_khach_hang) as so_lan_dat_phong 
+from  khach_hang kh join hop_dong hd on kh.ma_khach_hang=hd.ma_khach_hang 
+join loai_khach lk on kh.ma_loai_khach = lk.ma_loai_khach
+where lk.ten_loai_khach="Diamond"
+group by hd.ma_khach_hang
+order by so_lan_dat_phong desc;
+
+select kh.ma_khach_hang,kh.ho_ten,lk.ten_loai_khach,hd.ma_hop_dong,dv.ten_dich_vu,hd.ngay_lam_hop_dong,hd.ngay_ket_thuc,sum(dv.chi_phi_thue+dvdk.gia*hdct.so_luong)
+from loai_khach lk join khach_hang kh  on lk.ma_loai_khach=kh.ma_loai_khach 
+join hop_dong hd on kh.ma_khach_hang = hd.ma_khach_hang
+left join hop_dong_chi_tiet hdct on hd.ma_hop_dong = hdct.ma_hop_dong
+left join dich_vu_di_kem dvdk on hdct.ma_dich_vu_di_kem=dvdk.ma_dich_vu_di_kem
+join dich_vu dv on hd.ma_dich_vu=dv.ma_dich_vu
+group by hd.ma_hop_dong;
