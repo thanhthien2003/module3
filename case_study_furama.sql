@@ -173,22 +173,74 @@ value(1,5,2,4),
 (8,2,12,2);
 select * from nhan_vien nv
 where nv.ho_ten like 'H%' or nv.ho_ten like 'T%' or (nv.ho_ten like 'K%') and (char_length(ho_ten))<=15;
-
+-- task 3.
 select * from khach_hang kh
 where (datediff(now(),kh.ngay_sinh))/365  between 18 and 50 
 and kh.dia_chi like "%Đà Nẵng" or  kh.dia_chi like "%Quảng Trị%" ;
-
+-- task 4.
 select kh.ma_khach_hang,kh.ho_ten ,count(hd.ma_khach_hang) as so_lan_dat_phong 
 from  khach_hang kh join hop_dong hd on kh.ma_khach_hang=hd.ma_khach_hang 
 join loai_khach lk on kh.ma_loai_khach = lk.ma_loai_khach
 where lk.ten_loai_khach="Diamond"
 group by hd.ma_khach_hang
 order by so_lan_dat_phong desc;
-
+-- task 5.
 select kh.ma_khach_hang,kh.ho_ten,lk.ten_loai_khach,hd.ma_hop_dong,dv.ten_dich_vu,hd.ngay_lam_hop_dong,hd.ngay_ket_thuc,sum(dv.chi_phi_thue+dvdk.gia*hdct.so_luong)
 from loai_khach lk join khach_hang kh  on lk.ma_loai_khach=kh.ma_loai_khach 
 join hop_dong hd on kh.ma_khach_hang = hd.ma_khach_hang
 left join hop_dong_chi_tiet hdct on hd.ma_hop_dong = hdct.ma_hop_dong
 left join dich_vu_di_kem dvdk on hdct.ma_dich_vu_di_kem=dvdk.ma_dich_vu_di_kem
 join dich_vu dv on hd.ma_dich_vu=dv.ma_dich_vu
+group by hd.ma_hop_dong;
+-- task 6.
+select dv.ma_dich_vu,dv.ten_dich_vu,dv.dien_tich,dv.chi_phi_thue,ldv.ten_loai_dich_vu 
+from dich_vu dv 
+join hop_dong hd 
+on dv.ma_dich_vu=hd.ma_dich_vu
+join loai_dich_vu ldv 
+on dv.ma_loai_dich_vu =  ldv.ma_loai_dich_vu
+where hd.ma_dich_vu not in (
+select hop_dong.ma_dich_vu 
+from hop_dong  
+where year(hop_dong.ngay_lam_hop_dong) = 2021 and month(hop_dong.ngay_lam_hop_dong) between 1 and 3)
+group by dv.ma_dich_vu;
+-- task 7.
+select dv.ma_dich_vu,dv.ten_dich_vu,dv.dien_tich,dv.so_nguoi_toi_da,dv.chi_phi_thue,ldv.ten_loai_dich_vu 
+from dich_vu dv 
+join loai_dich_vu ldv 
+on dv.ma_loai_dich_vu = ldv.ma_loai_dich_vu
+join hop_dong hd
+on dv.ma_dich_vu = hd.ma_dich_vu
+where hd.ma_dich_vu not in(
+select hop_dong.ma_dich_vu
+from hop_dong
+where year(ngay_lam_hop_dong) = 2021)
+group by ma_dich_vu;
+-- task 8.
+-- cach 1.
+select kh.ho_ten 
+from khach_hang kh 
+group by kh.ho_ten;
+-- cach 2.
+select distinct kh.ho_ten
+from khach_hang kh;
+-- cach 3.
+select kh.ho_ten
+from khach_hang kh 
+union
+select kh.ho_ten
+from khach_hang kh;
+-- task 9.
+select month(hd.ngay_lam_hop_dong),count(hd.ma_khach_hang) as "so lan dat phong"
+from hop_dong hd 
+where year(hd.ngay_lam_hop_dong) = 2021
+group by  month(hd.ngay_lam_hop_dong)
+order by month(hd.ngay_lam_hop_dong);
+-- task 10.
+select hd.ma_hop_dong,hd.ngay_lam_hop_dong,hd.ngay_ket_thuc,ifnull(sum(hdct.so_luong),0) as "so luong dich vu di kem"
+from hop_dong hd 
+left join hop_dong_chi_tiet hdct 
+on hd.ma_hop_dong=hdct.ma_hop_dong
+left join dich_vu_di_kem dvdk 
+on hdct.ma_dich_vu_di_kem=dvdk.ma_dich_vu_di_kem
 group by hd.ma_hop_dong;
