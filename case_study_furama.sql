@@ -244,3 +244,18 @@ on hd.ma_hop_dong=hdct.ma_hop_dong
 left join dich_vu_di_kem dvdk 
 on hdct.ma_dich_vu_di_kem=dvdk.ma_dich_vu_di_kem
 group by hd.ma_hop_dong;
+-- task 11.
+select kh.ho_ten,dvdk.ma_dich_vu_di_kem,dvdk.ten_dich_vu_di_kem
+from khach_hang kh 
+join loai_khach lk 
+on kh.ma_loai_khach = lk.ma_loai_khach 
+join hop_dong hd
+on kh.ma_khach_hang=hd.ma_khach_hang
+join hop_dong_chi_tiet hdct
+on hd.ma_hop_dong = hdct.ma_hop_dong
+join dich_vu_di_kem dvdk 
+on hdct.ma_dich_vu_di_kem=dvdk.ma_dich_vu_di_kem
+where lk.ten_loai_khach = "Diamond" and (kh.dia_chi like "%Vinh" or kh.dia_chi like "%Quảng Ngãi")
+
+
+ 
