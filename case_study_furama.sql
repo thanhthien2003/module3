@@ -330,7 +330,7 @@ group by hdct.ma_hop_dong_chi_tiet;
  group by nv.ma_nhan_vien) as ab
  );
  select*from nhan_vien;
- -- task 17.
+ -- task 16 .
   set sql_safe_updates=0;
   delete from nhan_vien
  where ma_nhan_vien not in (
@@ -347,7 +347,7 @@ from nhan_vien;
 -- task 20.
 select nv.ma_nhan_vien,nv.ho_ten,nv.email,nv.so_dien_thoai,nv.ngay_sinh,nv.dia_chi
 from nhan_vien nv
-union
+union all
 select  kh.ma_khach_hang,kh.ho_ten,kh.email,kh.so_dien_thoai,kh.ngay_sinh,kh.dia_chi
 from khach_hang kh;
 -- task 17.
