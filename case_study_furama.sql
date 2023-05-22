@@ -350,3 +350,42 @@ from nhan_vien nv
 union
 select  kh.ma_khach_hang,kh.ho_ten,kh.email,kh.so_dien_thoai,kh.ngay_sinh,kh.dia_chi
 from khach_hang kh;
+-- task 17.
+update khach_hang
+ set khach_hang.ma_loai_khach=1
+ where khach_hang.ma_khach_hang in(
+ select * from(
+ select kh.ma_khach_hang
+ from khach_hang kh
+ join loai_khach lk
+ on kh.ma_loai_khach=lk.ma_loai_khach
+ join hop_dong hd
+ on kh.ma_khach_hang=hd.ma_khach_hang
+ join dich_vu dv
+ on hd.ma_dich_vu=dv.ma_dich_vu
+ join hop_dong_chi_tiet hdct
+ on hdct.ma_hop_dong=hd.ma_hop_dong
+ join dich_vu_di_kem dvdk 
+ on hdct.ma_dich_vu_di_kem=dvdk.ma_dich_vu_di_kem
+ where year(hd.ngay_lam_hop_dong)=2021 and lk.ten_loai_khach="Platinium"
+ group by kh.ma_khach_hang
+ having  sum(dv.chi_phi_thue+(hdct.so_luong*dvdk.gia))>=10000000
+ )as ab);
+ select * from khach_hang;
+ -- task 19.
+ set sql_safe_updates=0;
+ update dich_vu_di_kem
+ set dich_vu_di_kem.gia=dich_vu_di_kem.gia*2
+ where dich_vu_di_kem.ma_dich_vu_di_kem in (
+ select * from (
+ select dvdk.ma_dich_vu_di_kem
+ from hop_dong_chi_tiet hdct 
+ join dich_vu_di_kem dvdk 
+ on hdct.ma_dich_vu_di_kem=dvdk.ma_dich_vu_di_kem
+ join hop_dong hd
+ on hd.ma_hop_dong = hdct.ma_hop_dong
+ where year(hd.ngay_lam_hop_dong)=2020
+ group by ma_hop_dong_chi_tiet
+ having sum(hdct.so_luong)>10
+ ) as ab);
+ select * from dich_vu_di_kem;
