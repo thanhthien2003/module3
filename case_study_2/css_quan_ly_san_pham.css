@@ -1,3 +1,15 @@
 .header{
-  color: #0a58ca;
 }
+.logo{
+    text-align: center;
+}
+.outIcon{
+    text-align: right;
+}
+/*.buttonAdd{*/
+/*  position: absolute;*/
+/*   float: right;*/
+/*}*/
+/*.addProduct{*/
+/*    position: relative;*/
+/*}*/
