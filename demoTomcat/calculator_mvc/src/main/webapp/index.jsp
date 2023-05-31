@@ -6,7 +6,7 @@
 </head>
 <body>
 <h1>Simple Calculator</h1>
-<form method="post" action="/CalculatorServlet">
+<form method="post" action="/calculator">
     <p> Calculator</p>
     <label for="firtsNumber">First operand: </label>
     <input type="number" name="firtsNumber" id="firtsNumber">

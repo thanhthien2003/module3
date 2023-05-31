@@ -13,7 +13,7 @@
 <body>
 <h1>Result</h1>
 <p>
-${firtsNumber} ${symbol} ${secondNumber} = ${result};
+    ${firtsNumber} ${symbol} ${secondNumber} = ${result};
 </p>
 <h2>${message}</h2>
 </body>
