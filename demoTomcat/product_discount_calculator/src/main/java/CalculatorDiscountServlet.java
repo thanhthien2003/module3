@@ -7,7 +7,6 @@ import java.io.IOException;
 public class CalculatorDiscountServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
     }
 
     @Override
@@ -16,8 +15,8 @@ public class CalculatorDiscountServlet extends HttpServlet {
         double discountPercent = Double.parseDouble(request.getParameter("discountPercent"));
         double result = (listPrice * discountPercent * 0.01);
         double discountPrice = listPrice - result;
-        request.setAttribute("result",result);
-        request.setAttribute("discountPrice",discountPrice);
-       request.getRequestDispatcher("/index.jsp").forward(request,response);
+        request.setAttribute("result", result);
+        request.setAttribute("discountPrice", discountPrice);
+        request.getRequestDispatcher("/index.jsp").forward(request, response);
     }
 }

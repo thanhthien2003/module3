@@ -5,5 +5,5 @@ import display_customer_list.model.Customer;
 import java.util.List;
 
 public interface ICustomerService {
-   List<Customer> display();
+    List<Customer> display();
 }

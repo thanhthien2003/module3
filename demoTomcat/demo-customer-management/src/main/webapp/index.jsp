@@ -2,9 +2,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Display list</title>
+    <title>Customer Manager</title>
 </head>
 <body>
-<a href="/customer">Display List</a>
+<br/>
+<a href="/ControlerCustomerServlet?action=display">Display Customer List</a>
 </body>
 </html>
