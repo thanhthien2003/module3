@@ -5,13 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b27b2b09-94d7-4f37-8f22-321c5010e190" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../ss11_product_manager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ss11_product_manager/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_product_manager/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../ss11_product_manager/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_product_manager/src/main/java/controler/ProductServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ss11_product_manager/src/main/java/controler/ProductServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_product_manager/src/main/webapp/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../ss11_product_manager/src/main/webapp/view/add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_product_manager/src/main/webapp/delete.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../ss11_product_manager/src/main/webapp/view/delete.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_product_manager/src/main/webapp/display.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../ss11_product_manager/src/main/webapp/view/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_product_manager/src/main/webapp/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../ss11_product_manager/src/main/webapp/view/edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_product_manager/src/main/webapp/successService.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../ss11_product_manager/src/main/webapp/view/successService.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controler/UsersServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controler/UsersServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/IUserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/IUserRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/UserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/UserRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/IUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/display.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/display.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +85,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Codegym/module3x/module3x/module3/demoTomcat/ss11_product_manager",
+    "last_opened_file_path": "D:/Codegym/module3x/module3x/module3/demoTomcat/ss12_user_manager_second",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -190,7 +192,9 @@
       <updated>1685609168555</updated>
       <workItem from="1685609169731" duration="1688000" />
       <workItem from="1685611063509" duration="3611000" />
-      <workItem from="1685622906248" duration="8437000" />
+      <workItem from="1685622906248" duration="8843000" />
+      <workItem from="1685637613275" duration="14000" />
+      <workItem from="1685638625369" duration="299000" />
     </task>
     <servers />
   </component>
