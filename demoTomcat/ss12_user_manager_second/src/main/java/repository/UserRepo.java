@@ -128,7 +128,7 @@ public class UserRepo implements IUserRepo {
         Connection connection = BaseRepository.getConnection();
         List<User> userList = new ArrayList<>();
         PreparedStatement preparedStatement = null;
-        String selectToCountry = "select * from users where country = "+country;
+        String selectToCountry = "select * from users where country = '"+country +"'";
         try {
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery(selectToCountry);
@@ -149,11 +149,33 @@ public class UserRepo implements IUserRepo {
             }
         }
 
-        return null;
+        return userList;
     }
 
     @Override
-    public List<User> sortByName(String name) {
-        return null;
+    public List<User> sortByName() {
+        Connection connection = BaseRepository.getConnection();
+        List<User> userList = new ArrayList<>();
+        String sort = "select * from users order by name_users ";
+        try {
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery(sort);
+            while (resultSet.next()) {
+                int id = resultSet.getInt("id");
+                String name2 = resultSet.getString("name_users");
+                String email = resultSet.getString("email");
+                String country = resultSet.getString("country");
+                userList.add(new User(id, name2, email, country));
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        } finally {
+            try {
+                connection.close();
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
+        }
+        return userList;
     }
 }

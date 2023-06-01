@@ -12,6 +12,14 @@
     <title>Hien thi danh sach nguoi dung</title>
 </head>
 <body>
+<a href="/users">Trang chu</a>
+<form method="post" action="/users?action=findCountry">
+    Nhap quoc gia can tim: <input name="country" type="text">
+    <button type="submit">Tim kiem</button>
+</form>
+<form method="post" action="/users?action=sort">
+    <button type="submit">Sap xep theo ten</button>
+</form>
 <a href="/users?action=add">Them moi nguoi dung</a>
 <table border="1px">
     <tr>

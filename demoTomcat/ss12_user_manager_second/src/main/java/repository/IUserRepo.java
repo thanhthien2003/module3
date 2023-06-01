@@ -11,5 +11,5 @@ public interface IUserRepo {
     void edit(int id,User user);
     User findUserById(int id);
     List<User> findUserCountry(String country);
-    List<User> sortByName(String name);
+    List<User> sortByName();
 }

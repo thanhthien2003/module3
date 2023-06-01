@@ -28,4 +28,14 @@ public class UserService implements IUserService{
     public void edit(int id, User user) {
         iUserRepo.edit(id,user);
     }
+
+    @Override
+    public List<User> findUserCountry(String country) {
+        return iUserRepo.findUserCountry(country);
+    }
+
+    @Override
+    public List<User> sortByName() {
+        return iUserRepo.sortByName();
+    }
 }

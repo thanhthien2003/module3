@@ -77,7 +77,18 @@ public class UsersServlet extends HttpServlet {
                 iUserService.edit(id,user);
                 response.sendRedirect("/users");
                 break;
-            default:
+            case "findCountry":
+                String countryFind= request.getParameter("country");
+                List<User> userList = iUserService.findUserCountry(countryFind);
+                request.setAttribute("userList",userList);
+                RequestDispatcher requestDispatcher = request.getRequestDispatcher("display.jsp");
+                requestDispatcher.forward(request,response);
+                break;
+            case "sort":
+                List<User> userList1 = iUserService.sortByName();
+                request.setAttribute("userList",userList1);
+                request.getRequestDispatcher("/display.jsp").forward(request,response);
+                break;
         }
     }
 
