@@ -56,18 +56,18 @@
             <td>
                 <c:out value="${s.classId}"/>
             </td>
-            <td>
-                <button>
-                    <a href="/StudentServlet?action=showFormEdit">Sua</a>
-                </button>
-            </td>
-            <td>
-                <button type="button" class="btn btn-primary"
-                        data-bs-toggle="modal" data-bs-target="#exampleModal"
-                        onclick="remove(${s.id},'${s.name}')">
-                    Xóa
-                </button>
-            </td>
+<%--            <td>--%>
+<%--                <button>--%>
+<%--                    <a href="/StudentServlet?action=showFormEdit">Sua</a>--%>
+<%--                </button>--%>
+<%--            </td>--%>
+<%--            <td>--%>
+<%--                <button type="button" class="btn btn-primary"--%>
+<%--                        data-bs-toggle="modal" data-bs-target="#exampleModal"--%>
+<%--                        onclick="remove(${s.id},'${s.name}')">--%>
+<%--                    Xóa--%>
+<%--                </button>--%>
+<%--            </td>--%>
         </tr>
     </c:forEach>
     </tbody>
