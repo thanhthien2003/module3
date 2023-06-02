@@ -5,14 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3bb19d6-bb3f-4110-9cf8-6dae0ccdae79" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../books_manager/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../books_manager/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../books_manager/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../books_manager/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../books_manager/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../books_manager/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../books_manager/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../books_manager/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../books_manager/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../books_manager/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../books_manager/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../books_manager/src/main/java/controler/BooksServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../books_manager/src/main/java/model/Author.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../books_manager/src/main/java/model/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../books_manager/src/main/java/model/Borrow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../books_manager/src/main/java/model/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../books_manager/src/main/java/model/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../books_manager/src/main/java/repository/BookRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../books_manager/src/main/java/repository/IBookRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../books_manager/src/main/java/service/BookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../books_manager/src/main/java/service/IBookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../books_manager/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../books_manager/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controler/ProductServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controler/ProductServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/add.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/delete.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/delete.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/display.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/successService.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/successService.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ss12_user_manager_second/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ss12_user_manager_second/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +102,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Codegym/module3x/module3x/module3/demoTomcat/ss12_user_manager_second",
+    "last_opened_file_path": "D:/Codegym/module3x/module3x/module3/demoTomcat/ss11_product_manager",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -203,6 +219,7 @@
       <workItem from="1685582356136" duration="1255000" />
       <workItem from="1685624786963" duration="32000" />
       <workItem from="1685637629142" duration="1329000" />
+      <workItem from="1685670336208" duration="139000" />
     </task>
     <servers />
   </component>

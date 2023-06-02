@@ -27,24 +27,36 @@ public class ProductServlet extends HttpServlet {
                 request.getRequestDispatcher("view/add.jsp").forward(request, response);
                 break;
             case "delete":
-                int idDelete = Integer.parseInt(request.getParameter("idDelete"));
-                Product product = productService.findOneProduct(idDelete);
-                request.setAttribute("productDelete", product);
-                request.getRequestDispatcher("view/delete.jsp").forward(request, response);
+                showDeleteFrom(request, response);
                 break;
             case "edit":
-                int idEdit = Integer.parseInt(request.getParameter("idEdit"));
-                Product product1 = productService.findOneProduct(idEdit);
-                request.setAttribute("productEdit", product1);
-                request.getRequestDispatcher("view/edit.jsp").forward(request, response);
+                showFormEdit(request, response);
                 break;
             default:
-                List<Product> productList = productService.display();
-                request.setAttribute("productList", productList);
-                RequestDispatcher requestDispatcher = request.getRequestDispatcher("view/list.jsp");
-                requestDispatcher.forward(request,response);
+                showList(request, response);
                 break;
         }
+    }
+
+    private void showDeleteFrom(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        int idDelete = Integer.parseInt(request.getParameter("idDelete"));
+        Product product = productService.findOneProduct(idDelete);
+        request.setAttribute("productDelete", product);
+        request.getRequestDispatcher("view/delete.jsp").forward(request, response);
+    }
+
+    private void showFormEdit(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        int idEdit = Integer.parseInt(request.getParameter("idEdit"));
+        Product product1 = productService.findOneProduct(idEdit);
+        request.setAttribute("productEdit", product1);
+        request.getRequestDispatcher("view/edit.jsp").forward(request, response);
+    }
+
+    private void showList(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        List<Product> productList = productService.display();
+        request.setAttribute("productList", productList);
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("view/list.jsp");
+        requestDispatcher.forward(request, response);
     }
 
     @Override
