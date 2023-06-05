@@ -7,15 +7,15 @@ public class Borrow {
 //    borrow_date VARCHAR(50) NOT NULL,
 //    return_date VARCHAR(50) NOT NULL
     private int idBorrow;
-    private int idStudent;
-    private int idBook;
+    private Student idStudent;
+    private Book idBook;
     private  String borrowDate;
     private String returnDate;
 
     public Borrow() {
     }
 
-    public Borrow(int idBorrow, int idStudent, int idBook, String borrowDate, String returnDate) {
+    public Borrow(int idBorrow, Student idStudent, Book idBook, String borrowDate, String returnDate) {
         this.idBorrow = idBorrow;
         this.idStudent = idStudent;
         this.idBook = idBook;
@@ -31,19 +31,19 @@ public class Borrow {
         this.idBorrow = idBorrow;
     }
 
-    public int getIdStudent() {
+    public Student getIdStudent() {
         return idStudent;
     }
 
-    public void setIdStudent(int idStudent) {
+    public void setIdStudent(Student idStudent) {
         this.idStudent = idStudent;
     }
 
-    public int getIdBook() {
+    public Book getIdBook() {
         return idBook;
     }
 
-    public void setIdBook(int idBook) {
+    public void setIdBook(Book idBook) {
         this.idBook = idBook;
     }
 

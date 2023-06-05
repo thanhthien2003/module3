@@ -14,13 +14,15 @@ public class UserRepo implements IUserRepo {
     private static final String SELECT_BY_COUNTRY = "select * from users where country = ? ";
     private static final String EDIT = "update users set name_users = ?,email= ?, country =? where id = ?;";
 
+
     @Override
     public List<User> display() {
         Connection connection = BaseRepository.getConnection();
+        String select = "{Call show_users}";
         List<User> userList = new ArrayList<>();
         try {
-            Statement statement = connection.createStatement();
-            ResultSet resultSet = statement.executeQuery(SELECT);
+            CallableStatement callableStatement = connection.prepareCall(select);
+            ResultSet resultSet = callableStatement.executeQuery();
             while (resultSet.next()) {
                 int id = resultSet.getInt("id");
                 String name = resultSet.getString("name_users");
@@ -30,12 +32,6 @@ public class UserRepo implements IUserRepo {
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);
-        } finally {
-            try {
-                connection.close();
-            } catch (SQLException e) {
-                throw new RuntimeException(e);
-            }
         }
         return userList;
     }
@@ -63,21 +59,14 @@ public class UserRepo implements IUserRepo {
     @Override
     public void delete(int id) {
         Connection connection = BaseRepository.getConnection();
-        PreparedStatement preparedStatement = null;
+        String delete = "{call delete_users(?)}";
         try {
-            preparedStatement = connection.prepareStatement(DELETE);
-            preparedStatement.setInt(1, id);
-            preparedStatement.executeUpdate();
+            CallableStatement callableStatement = connection.prepareCall(delete);
+            callableStatement.setInt(1, id);
+            callableStatement.executeUpdate();
         } catch (SQLException e) {
             throw new RuntimeException(e);
-        } finally {
-            try {
-                connection.close();
-            } catch (SQLException e) {
-                throw new RuntimeException(e);
-            }
         }
-
     }
 
     @Override
@@ -103,22 +92,17 @@ public class UserRepo implements IUserRepo {
     @Override
     public void edit(int id, User user) {
         Connection connection = BaseRepository.getConnection();
-        PreparedStatement preparedStatement = null;
+        String edit = "{call edit_users(?,?,?,?)}";
         try {
-            preparedStatement = connection.prepareStatement(EDIT);
-            preparedStatement.setString(1, user.getName());
-            preparedStatement.setString(2, user.getEmail());
-            preparedStatement.setString(3, user.getCountry());
-            preparedStatement.setInt(4, id);
-            preparedStatement.executeUpdate();
+            CallableStatement callableStatement = connection.prepareCall(edit);
+            callableStatement.setInt(1,id);
+            callableStatement.setString(2, user.getName());
+            callableStatement.setString(3, user.getEmail());
+            callableStatement.setString(4, user.getCountry());
+
+            callableStatement.executeUpdate();
         } catch (SQLException e) {
             throw new RuntimeException(e);
-        } finally {
-            try {
-                connection.close();
-            } catch (SQLException e) {
-                throw new RuntimeException(e);
-            }
         }
     }
 

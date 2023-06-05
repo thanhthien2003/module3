@@ -13,13 +13,20 @@ public class Book {
     private int id;
     private String title;
     private int pageSize;
-    private int authorId;
-    private int cateGoryId;
+    private Author authorId;
+    private Category cateGoryId;
 
     public Book() {
     }
 
-    public Book(int id, String title, int pageSize, int authorId, int cateGoryId) {
+    public Book(String title, int pageSize, Author authorId, Category cateGoryId) {
+        this.title = title;
+        this.pageSize = pageSize;
+        this.authorId = authorId;
+        this.cateGoryId = cateGoryId;
+    }
+
+    public Book(int id, String title, int pageSize, Author authorId, Category cateGoryId) {
         this.id = id;
         this.title = title;
         this.pageSize = pageSize;
@@ -51,19 +58,19 @@ public class Book {
         this.pageSize = pageSize;
     }
 
-    public int getAuthorId() {
+    public Author getAuthorId() {
         return authorId;
     }
 
-    public void setAuthorId(int authorId) {
+    public void setAuthorId(Author authorId) {
         this.authorId = authorId;
     }
 
-    public int getCateGoryId() {
+    public Category getCateGoryId() {
         return cateGoryId;
     }
 
-    public void setCateGoryId(int cateGoryId) {
+    public void setCateGoryId(Category cateGoryId) {
         this.cateGoryId = cateGoryId;
     }
 }

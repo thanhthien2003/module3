@@ -5,30 +5,110 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b27b2b09-94d7-4f37-8f22-321c5010e190" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../books_manager/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../books_manager/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../books_manager/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../books_manager/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../books_manager/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../books_manager/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../books_manager/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../books_manager/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../books_manager/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../books_manager/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../books_manager/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../books_manager/src/main/java/controler/BooksServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../books_manager/src/main/java/model/Author.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../books_manager/src/main/java/model/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../books_manager/src/main/java/model/Borrow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../books_manager/src/main/java/model/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../books_manager/src/main/java/model/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../books_manager/src/main/java/repository/BookRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../books_manager/src/main/java/repository/IBookRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../books_manager/src/main/java/service/BookService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../books_manager/src/main/java/service/IBookService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../books_manager/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../books_manager/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C0223G1-Repo-FS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../book_manager.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../books.mwb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../books_manager/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../books_manager/src/main/java/repository/BaseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../books_manager/src/main/java/repository/author/AuthorRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../books_manager/src/main/java/repository/author/IAuthorRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../books_manager/src/main/java/repository/book/BookRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../books_manager/src/main/java/repository/book/IBookRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../books_manager/src/main/java/repository/category/CategoryRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../books_manager/src/main/java/repository/category/ICategoryRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../books_manager/src/main/java/service/author/AuthorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../books_manager/src/main/java/service/author/IAuthorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../books_manager/src/main/java/service/book/BookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../books_manager/src/main/java/service/book/IBookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../books_manager/src/main/java/service/category/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../books_manager/src/main/java/service/category/ICategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../books_manager/src/main/webapp/view/add.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../books_manager/src/main/webapp/view/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../books_manager/src/main/webapp/view/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/.idea/demo_new.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/.gradle/7.1/dependencies-accessors/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/.gradle/7.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/.gradle/7.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/build/classes/java/main/com/codegym/controller/StudentServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/build/classes/java/main/com/codegym/model/Clazz.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/build/classes/java/main/com/codegym/model/Student.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/build/classes/java/main/com/codegym/repository/BaseRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/build/classes/java/main/com/codegym/repository/ClazzRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/build/classes/java/main/com/codegym/repository/IClazzRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/build/classes/java/main/com/codegym/repository/IStudentRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/build/classes/java/main/com/codegym/repository/StudentRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/build/classes/java/main/com/codegym/service/ClazzService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/build/classes/java/main/com/codegym/service/IClazzService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/build/classes/java/main/com/codegym/service/IStudentService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/build/classes/java/main/com/codegym/service/StudentService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/build/libs/demo_new-1.0-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/src/main/java/com/codegym/controller/StudentServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/src/main/java/com/codegym/model/Clazz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/src/main/java/com/codegym/model/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/src/main/java/com/codegym/repository/BaseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/src/main/java/com/codegym/repository/ClazzRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/src/main/java/com/codegym/repository/IClazzRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/src/main/java/com/codegym/repository/IStudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/src/main/java/com/codegym/repository/StudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/src/main/java/com/codegym/service/ClazzService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/src/main/java/com/codegym/service/IClazzService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/src/main/java/com/codegym/service/IStudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/src/main/java/com/codegym/service/StudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/src/main/webapp/view/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/src/main/webapp/view/navbar.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/src/main/webapp/view/student/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo_new/demo_new/src/main/webapp/view/student/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../case_study_2/css_quan_ly_san_pham.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../case_study_2/css_quan_ly_san_pham.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../case_study_2/giao_dien_quan_ly_san_pham_demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../case_study_2/giao_dien_quan_ly_san_pham_demo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../books_manager/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../books_manager/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../books_manager/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../books_manager/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../books_manager/src/main/java/controler/BooksServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../books_manager/src/main/java/controler/BooksServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../books_manager/src/main/java/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/../books_manager/src/main/java/model/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../books_manager/src/main/java/model/Borrow.java" beforeDir="false" afterPath="$PROJECT_DIR$/../books_manager/src/main/java/model/Borrow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../books_manager/src/main/java/repository/BookRepo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../books_manager/src/main/java/repository/IBookRepo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../books_manager/src/main/java/service/BookService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../books_manager/src/main/java/service/IBookService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../books_manager/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../books_manager/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_product_manager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ss11_product_manager/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/UserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/UserRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/display.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/display.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../list_users.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../list_users.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_javaweb/src/main/webapp/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss9_javaweb/src/main/webapp/list.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,20 +174,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Codegym/module3x/module3x/module3/demoTomcat/ss12_user_manager_second&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/Codegym/module3x/module3x/module3/demoTomcat/ss12_user_manager_second",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.753" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.753" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="hot-swap-classes" />
@@ -210,7 +290,12 @@
       <workItem from="1685622906248" duration="8843000" />
       <workItem from="1685637613275" duration="14000" />
       <workItem from="1685638625369" duration="625000" />
-      <workItem from="1685668848388" duration="645000" />
+      <workItem from="1685668848388" duration="5880000" />
+      <workItem from="1685691967272" duration="68000" />
+      <workItem from="1685694679469" duration="2175000" />
+      <workItem from="1685869898287" duration="707000" />
+      <workItem from="1685929001198" duration="404000" />
+      <workItem from="1685946751550" duration="4678000" />
     </task>
     <servers />
   </component>
