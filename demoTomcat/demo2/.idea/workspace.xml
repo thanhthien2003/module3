@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b27b2b09-94d7-4f37-8f22-321c5010e190" name="Changes" comment="">
+    <list default="true" id="f1cc92a9-a6a2-4a63-b79f-e07162172e23" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/../bai_tap_lam_them/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../bai_tap_lam_them/.idea/gradle.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../bai_tap_lam_them/.idea/misc.xml" afterDir="false" />
@@ -27,21 +27,80 @@
       <change afterPath="$PROJECT_DIR$/../bai_thi_cuoi_module3/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../bai_thi_cuoi_module3/.idea/gradle.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../bai_thi_cuoi_module3/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_thi_cuoi_module3/.idea/uiDesigner.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../bai_thi_cuoi_module3/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bai_thi_cuoi_module3/src/main/java/BaseRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bai_thi_cuoi_module3/src/main/webapp/create.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bai_thi_cuoi_module3/src/main/webapp/edit.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bai_thi_cuoi_module3/src/main/webapp/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_thi_cuoi_module3/src/main/java/controler/ChiTieuServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_thi_cuoi_module3/src/main/java/model/ChiTieu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_thi_cuoi_module3/src/main/java/model/LoaiChiTieu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_thi_cuoi_module3/src/main/java/repository/BaseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_thi_cuoi_module3/src/main/java/repository/chiTieu/ChiTieuRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_thi_cuoi_module3/src/main/java/repository/chiTieu/IChiTieuRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_thi_cuoi_module3/src/main/java/repository/loaiChiTieu/ILoaiChiTieuRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_thi_cuoi_module3/src/main/java/repository/loaiChiTieu/LoaiChiTieuRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_thi_cuoi_module3/src/main/java/service/chiTieu/ChiTieuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_thi_cuoi_module3/src/main/java/service/chiTieu/IChiTieuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_thi_cuoi_module3/src/main/java/service/loaiChiTieu/ILoaiChiTieuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_thi_cuoi_module3/src/main/java/service/loaiChiTieu/LoaiChiTieuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_thi_cuoi_module3/src/main/webapp/view/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_thi_cuoi_module3/src/main/webapp/view/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chuyen_doi_tien_te/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chuyen_doi_tien_te/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chuyen_doi_tien_te/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chuyen_doi_tien_te/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chuyen_doi_tien_te/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chuyen_doi_tien_te/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chuyen_doi_tien_te/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chuyen_doi_tien_te/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chuyen_doi_tien_te/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chuyen_doi_tien_te/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chuyen_doi_tien_te/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chuyen_doi_tien_te/src/main/java/com/example/chuyen_doi_tien_te/CalculatorControler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chuyen_doi_tien_te/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chuyen_doi_tien_te/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chuyen_doi_tien_te/src/main/webapp/WEB-INF/views/result.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chuyen_doi_tien_te/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chuyen_doi_tien_te/src/main/webapp/index.jsp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../demo1/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../demo1/.idea/gradle.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../demo1/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../demo1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo2/controler/GreetingControler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo3/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo3/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo3/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo3/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo3/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo3/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo3/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo3/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo3/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo3/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo3/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo3/src/main/webapp/WEB-INF/application.Context.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo3/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo3/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo3/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../gallery_bootstrap_bai_tap/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../gallery_bootstrap_bai_tap/.idea/gallery_bootstrap_bai_tap.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../layout_css/.idea/layout_css.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../C0223G1-Repo-FS" beforeDir="false" afterPath="$PROJECT_DIR$/../../C0223G1-Repo-FS" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Customer_Management/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Customer_Management/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss12_user_manager_second/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ss12_user_manager_second/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../list_users.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../list_users.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,28 +113,11 @@
       <ProjectState />
     </projectState>
   </component>
-  <component name="ExternalProjectsManager">
-    <system id="GRADLE">
-      <state>
-        <projects_view>
-          <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ss12_user_manager_second" type="f1a62948:ProjectNode" />
-              </path>
-            </expand>
-            <select />
-          </tree_state>
-        </projects_view>
-      </state>
-    </system>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Jsp File" />
+        <option value="spring-beans.schema" />
         <option value="Class" />
       </list>
     </option>
@@ -100,7 +142,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectId" id="2Qb4uHPhB6tyMG2aMKBIFnyWkwz" />
+  <component name="ProjectId" id="2REP7crbZcSd1EN2YWFYE3gwVF3" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -114,7 +156,6 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Codegym/module3x/module3x/module3/demoTomcat/bai_thi_cuoi_module3",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -122,18 +163,24 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Codegym\module3x\module3x\module3\demoTomcat\demo2\src\main\webapp\WEB-INF\views" />
+      <recent name="D:\Codegym\module3x\module3x\module3\demoTomcat\demo2\src\main\webapp\WEB-INF" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.753" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.753" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="hot-swap-classes" />
       <deployment>
-        <artifact name="Gradle : com.example : ss12_user_manager_second-1.0-SNAPSHOT.war">
+        <artifact name="Gradle : com.example : demo2-1.0-SNAPSHOT.war">
           <settings>
             <option name="CONTEXT_PATH" value="" />
           </settings>
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="71df7df4-4da0-497f-978e-681354cfdd33" />
+        <option name="BASE_DIRECTORY_NAME" value="d4838942-a567-4fea-9d1d-7ccc043b60f5" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -141,7 +188,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="54085" />
+        <option name="DEBUG_PORT" value="52666" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -206,7 +253,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="Gradle : com.example : ss12_user_manager_second-1.0-SNAPSHOT.war" />
+          <artifact name="Gradle : com.example : demo2-1.0-SNAPSHOT.war" />
         </option>
       </method>
     </configuration>
@@ -214,28 +261,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b27b2b09-94d7-4f37-8f22-321c5010e190" name="Changes" comment="" />
-      <created>1685609168555</created>
+      <changelist id="f1cc92a9-a6a2-4a63-b79f-e07162172e23" name="Changes" comment="" />
+      <created>1686812102376</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1685609168555</updated>
-      <workItem from="1685609169731" duration="1688000" />
-      <workItem from="1685611063509" duration="3611000" />
-      <workItem from="1685622906248" duration="8843000" />
-      <workItem from="1685637613275" duration="14000" />
-      <workItem from="1685638625369" duration="625000" />
-      <workItem from="1685668848388" duration="5880000" />
-      <workItem from="1685691967272" duration="68000" />
-      <workItem from="1685694679469" duration="2175000" />
-      <workItem from="1685869898287" duration="707000" />
-      <workItem from="1685929001198" duration="404000" />
-      <workItem from="1685946751550" duration="5582000" />
-      <workItem from="1685958916507" duration="2008000" />
-      <workItem from="1686014925195" duration="2753000" />
-      <workItem from="1686125806286" duration="723000" />
-      <workItem from="1686553601789" duration="42000" />
-      <workItem from="1686607182657" duration="867000" />
-      <workItem from="1686618129388" duration="771000" />
+      <updated>1686812102376</updated>
+      <workItem from="1686812103665" duration="3578000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5d596665-dc73-4b5c-ad0e-91231b5a4433" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../bai_tap_lam_them/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_tap_lam_them/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_tap_lam_them/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_tap_lam_them/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_tap_lam_them/src/main/java/controler/SoHeoServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_tap_lam_them/src/main/java/model/Heo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_tap_lam_them/src/main/java/model/NoiXuaXu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_tap_lam_them/src/main/java/repository/BaseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_tap_lam_them/src/main/java/repository/HeoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_tap_lam_them/src/main/java/repository/IHeoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_tap_lam_them/src/main/java/repository/INoiXuatXuRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_tap_lam_them/src/main/java/repository/NoiXuatXuRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_tap_lam_them/src/main/java/service/HeoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_tap_lam_them/src/main/java/service/IHeoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_tap_lam_them/src/main/java/service/INoiXuatXuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_tap_lam_them/src/main/java/service/NoiXuatXuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_tap_lam_them/src/main/webapp/view/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_tap_lam_them/src/main/webapp/view/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_tap_lam_them/src/main/webapp/view/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_thi_cuoi_module3/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_thi_cuoi_module3/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_thi_cuoi_module3/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_thi_cuoi_module3/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_thi_cuoi_module3/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_thi_cuoi_module3/src/main/java/controler/ChiTieuServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_thi_cuoi_module3/src/main/java/model/ChiTieu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_thi_cuoi_module3/src/main/java/model/LoaiChiTieu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_thi_cuoi_module3/src/main/java/repository/BaseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_thi_cuoi_module3/src/main/java/repository/chiTieu/ChiTieuRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_thi_cuoi_module3/src/main/java/repository/chiTieu/IChiTieuRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_thi_cuoi_module3/src/main/java/repository/loaiChiTieu/ILoaiChiTieuRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_thi_cuoi_module3/src/main/java/repository/loaiChiTieu/LoaiChiTieuRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_thi_cuoi_module3/src/main/java/service/chiTieu/ChiTieuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_thi_cuoi_module3/src/main/java/service/chiTieu/IChiTieuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_thi_cuoi_module3/src/main/java/service/loaiChiTieu/ILoaiChiTieuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_thi_cuoi_module3/src/main/java/service/loaiChiTieu/LoaiChiTieuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_thi_cuoi_module3/src/main/webapp/view/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_thi_cuoi_module3/src/main/webapp/view/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chuyen_doi_tien_te/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chuyen_doi_tien_te/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chuyen_doi_tien_te/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chuyen_doi_tien_te/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chuyen_doi_tien_te/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chuyen_doi_tien_te/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chuyen_doi_tien_te/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chuyen_doi_tien_te/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chuyen_doi_tien_te/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chuyen_doi_tien_te/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chuyen_doi_tien_te/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chuyen_doi_tien_te/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chuyen_doi_tien_te/src/main/java/com/example/chuyen_doi_tien_te/CalculatorControler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chuyen_doi_tien_te/src/main/java/com/example/chuyen_doi_tien_te/service/CalculatorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chuyen_doi_tien_te/src/main/java/com/example/chuyen_doi_tien_te/service/ICalculatorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chuyen_doi_tien_te/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chuyen_doi_tien_te/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chuyen_doi_tien_te/src/main/webapp/WEB-INF/views/result.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chuyen_doi_tien_te/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chuyen_doi_tien_te/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo1/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo2/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo2/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo2/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo2/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo2/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo2/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo2/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo2/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo2/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo2/src/main/java/com/example/demo2/controler/GreetingControler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo2/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo2/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo2/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo2/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo3/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo3/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo3/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo3/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo3/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo3/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo3/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo3/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo3/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo3/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo3/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo3/src/main/webapp/WEB-INF/application.Context.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo3/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo3/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo3/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ungdungtudien/DictionaryControler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ungdungtudien/service/DictionaryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ungdungtudien/service/IDictionaryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery_bootstrap_bai_tap/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gallery_bootstrap_bai_tap/.idea/gallery_bootstrap_bai_tap.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../layout_css/.idea/layout_css.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C0223G1-Repo-FS" beforeDir="false" afterPath="$PROJECT_DIR$/../../C0223G1-Repo-FS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Customer_Management/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Customer_Management/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss12_user_manager_second/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ss12_user_manager_second/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../list_users.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../list_users.sql" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="spring-beans.schema" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2REZ76ad2IFjtXWZN4PxwSp3WFT" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/Codegym/module3x/module3x/module3/demoTomcat/chuyen_doi_tien_te",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Codegym\module3x\module3x\module3\demoTomcat\ung-dung-tu-dien\src\main\webapp\WEB-INF\views" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.753" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.753" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="hot-swap-classes" />
+      <deployment>
+        <artifact name="Gradle : com.example : ung-dung-tu-dien-1.0-SNAPSHOT.war">
+          <settings>
+            <option name="CONTEXT_PATH" value="" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="7aa1ee7d-d90a-4be2-a2db-254d61a8a034" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="54442" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Gradle : com.example : ung-dung-tu-dien-1.0-SNAPSHOT.war" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5d596665-dc73-4b5c-ad0e-91231b5a4433" name="Changes" comment="" />
+      <created>1686817032219</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1686817032219</updated>
+      <workItem from="1686817033368" duration="4063000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
